@@ -1,0 +1,26 @@
+//extends
+
+.imgProd {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    background-color: $mainColor;
+    box-shadow: 2px 2px 10px;
+    
+
+    &:hover {
+        margin-top: 4rem;
+        margin-left: 0,5rem;
+        margin-right: 3rem;
+        box-shadow: 8px 8px 40px;
+        cursor: pointer;
+    }
+
+}
+
+
+.productos{
+    float: left;    
+}
+
+

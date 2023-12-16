@@ -1,0 +1,76 @@
+* {
+    font-family: $mainFont;
+
+}
+
+
+//navbar
+header {
+    display: flex;
+    justify-content: end;
+    border-bottom: solid 3px $white;
+    background-color: $secondaryColor;
+    
+
+.fuentesNav{
+    font-size: $textMd;
+}
+    .mainLogo {
+        background-color: $black width 300px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .tamLogo {
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+//carrousel
+.imgcaTam {
+    display: grid;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+.imgPres {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    background-color: azure;
+    box-shadow: 2px 2px 10px;
+}
+
+    
+
+//encabezado
+.tituloEnc {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 2rem;
+    background-color: $secondaryColor;
+    font-size: $textLg;
+    font-weight: bolder;
+    color: $black;
+    
+}
+
+
+//footer
+.footFont {
+    font-size: $textSm;
+    &:hover {
+        font-size: 17px;
+        color: $secondaryColor;
+        background-color: $mainColor;
+    }
+}
+
+
+

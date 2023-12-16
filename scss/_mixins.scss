@@ -1,0 +1,25 @@
+.btn-gral {
+    background-color: $mainColor;
+}
+
+.btn-inicio {
+    @extend .btn-gral;
+    &:hover {
+        background-color: $secondaryColor;
+    }
+
+}
+
+.btn-contacto {
+    @extend .btn-gral;
+        &:hover {
+            background-image: linear-gradient(to right, $mainColor, $secondaryColor);
+        }
+    }
+
+
+//mixins
+@mixin sizes ($width, $height){
+    height: $height;
+    width:  $width;
+}

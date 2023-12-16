@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+.btn-gral, .btn-contacto, .btn-inicio {
+  background-color: aliceblue;
+}
+
+.btn-inicio:hover {
+  background-color: rgba(150, 150, 150, 0.74);
+}
+
+.btn-contacto:hover {
+  background-image: linear-gradient(to right, aliceblue, rgba(150, 150, 150, 0.74));
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  border-bottom: solid 3px rgb(241, 241, 241);
+  background-color: rgba(150, 150, 150, 0.74);
+}
+header .fuentesNav {
+  font-size: 25px;
+}
+header .mainLogo {
+  background-color: rgb(24, 23, 23) width 300px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+header .tamLogo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.imgcaTam {
+  display: grid;
+  height: 500px;
+  object-fit: cover;
+}
+
+.imgPres {
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 4rem;
+  background-color: azure;
+  box-shadow: 2px 2px 10px;
+}
+
+.tituloEnc {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: rgba(150, 150, 150, 0.74);
+  font-size: 38px;
+  font-weight: bolder;
+  color: rgb(24, 23, 23);
+}
+
+.footFont {
+  font-size: 18px;
+}
+.footFont:hover {
+  font-size: 17px;
+  color: rgba(150, 150, 150, 0.74);
+  background-color: aliceblue;
+}
+
+/*CONTACTO*/
+.cuadroCont {
+  background-color: rgb(24, 23, 23);
+}
+
+.contFuente {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.mainCont {
+  display: flex;
+  background-image: url("../img/logo-givree2.png");
+}
+
+.quienesSomos {
+  justify-self: center;
+}
+.quienesSomos .fuenteQuienesSomos {
+  color: aliceblue;
+  font-weight: bolder;
+  background-color: rgb(24, 23, 23);
+  justify-self: center;
+  font-size: 38px;
+}
+.quienesSomos .titulo {
+  grid-area: titulo;
+}
+.quienesSomos .subTituloA {
+  padding: 2rem;
+  align-self: center;
+  grid-area: subtitulo;
+}
+.quienesSomos .imgQuienes {
+  height: 500px;
+  width: 500px;
+  grid-area: imagenA;
+}
+.quienesSomos .contA {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.856);
+  justify-self: center;
+  grid-area: contenidoA;
+}
+
+/*vista pc*/
+@media (min-width: 994px) {
+  .quienesSomos {
+    display: grid;
+    grid-template-areas: "titulo  titulo" "imagenA subtitulo" "imagenA contenidoA";
+    background-image: url("../img/logo-givree2.png");
+  }
+}
+@media (min-width: 993px) and (max-width: 1037px) {
+  .contA {
+    font-size: 18px;
+  }
+}
+/*vista tablet*/
+@media (min-width: 576px) and (max-width: 992px) {
+  .quienesSomos {
+    display: grid;
+    grid-template-areas: "titulo  titulo" "subtitulo subtitulo" "imagenA contenidoA" "imagenA contenidoA";
+    background-color: black;
+    gap: 5px;
+  }
+  .imgQuienes {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media (min-width: 576px) and (max-width: 761px) {
+  .quienesSomos {
+    display: grid;
+    grid-template-areas: "titulo  titulo" "subtitulo subtitulo" "imagenA imagenA " "contenidoA contenidoA";
+    background-color: black;
+    gap: 5px;
+  }
+  .imgQuienes {
+    justify-self: center;
+    width: 50px;
+    height: 300px;
+  }
+  .contA {
+    font-size: 18px;
+  }
+}
+/*vista telefono*/
+@media (max-width: 575px) {
+  .quienesSomos {
+    display: grid;
+    grid-template-areas: "titulo" "subtitulo" "contenidoA" "contenidoA";
+    background-image: url("../img/quienes-somos.jpg");
+    gap: 5px;
+  }
+  .imgQuienes {
+    display: none;
+  }
+}
+.imgProd {
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 4rem;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 10px;
+}
+.imgProd:hover {
+  margin-top: 4rem;
+  margin-left: 0, 5rem;
+  margin-right: 3rem;
+  box-shadow: 8px 8px 40px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

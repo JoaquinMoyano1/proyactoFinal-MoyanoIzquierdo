@@ -1,0 +1,131 @@
+.quienesSomos {
+    justify-self: center;
+
+    .fuenteQuienesSomos {
+        color: $mainColor;
+        font-weight: bolder;
+        background-color: $black;
+        justify-self: center;
+        font-size: $textLg;   
+    }
+
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    .subTituloA {
+        padding: 2rem;
+        align-self: center;
+        grid-area: subtitulo;
+    }
+    
+    .imgQuienes {
+        @include sizes(500px, 500px);
+        grid-area: imagenA;
+        
+    }
+
+    .contA {
+        color: $mainColor;
+        background-color: rgba(0, 0, 0, 0.856);
+        justify-self: center;
+        grid-area: contenidoA;
+    }
+}
+
+
+
+
+/*vista pc*/
+
+@media (min-width: 994px) {
+
+    .quienesSomos {
+        display: grid;
+        grid-template-areas:
+            "titulo  titulo"
+            "imagenA subtitulo"
+            "imagenA contenidoA"
+        ;
+        background-image: url("../img/logo-givree2.png");
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1037px) {
+    .contA {
+        font-size: 18px;
+    }
+}
+
+
+/*vista tablet*/
+@media (min-width: 576px) and (max-width: 992px) {
+    .quienesSomos {
+        display: grid;
+        grid-template-areas:
+            "titulo  titulo"
+            "subtitulo subtitulo"
+            "imagenA contenidoA"
+            "imagenA contenidoA"
+        ;
+        background-color: black;
+        gap: 5px;
+    }
+
+    .imgQuienes {
+
+        width: 300px;
+        height: 500px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 761px) {
+    .quienesSomos {
+        display: grid;
+        grid-template-areas:
+            "titulo  titulo"
+            "subtitulo subtitulo"
+            "imagenA imagenA "
+            "contenidoA contenidoA"
+        ;
+        background-color: black;
+        gap: 5px;
+    }
+
+    .imgQuienes {
+        justify-self: center;
+        width: 50px;
+        height: 300px;
+        
+    }
+
+    .contA {
+        font-size: $textSm;
+    }
+
+
+}
+
+
+/*vista telefono*/
+@media (max-width: 575px) {
+
+    .quienesSomos {
+        display: grid;
+
+        grid-template-areas:
+            "titulo"
+            "subtitulo"
+            "contenidoA"
+            "contenidoA"
+        ;
+        background-image: url("../img/quienes-somos.jpg");
+        gap: 5px;
+
+    }
+
+    .imgQuienes {
+        display: none;
+    }
+}

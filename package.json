@@ -1,0 +1,17 @@
+{
+  "name": "proyectofinal-moyano",
+  "version": "1.0.0",
+  "description": "Tercer Entrega del curso de JavaScript. \r En esta tercer entrega me encuentro uniendo ya de una vez lo que fue mi proyecto principal de \"Desarrollo Web\" empezando a aplicar las herramientas de clase.\r Me encontre con varios inconvenientes con el codigo y no pude avanzar mas que por el lado de productos y servicios de la pagina.\r Hice uso de DOM, If, for, Storage y Eventos de usuario.\r Mi unico inconveniente con la entrega y espero que me puedan decir y orientar hacia donde esta el problema, es que, como veran, \r todas las cards de los productos me quedan en columna, intente buscar por todos lados pero no pude hacer que se pongan en forma de galeria.\r No me avive de mandar un mensaje a los tutores la verdad, ahi estuve mal yo pero queria ver si lo podia resolver por mi cuenta.\r De todas formas, y mas alla de ese pequeño inconveniente que tuve con el diseño, a mi parecer el trabajo esta bastante bien, y ya me va encaminando a como quiero \r que funcione la pagina en suy totalidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

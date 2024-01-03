@@ -109,10 +109,10 @@
             productsContainer.innerHTML += `
                 <div class="col-xl-3">
                     <div class="card imgProd">
-                        <img src=${producto.imagen} class="card-img-top" alt=${producto.alt}>
+                        <img src= ${producto.imagen} class="card-img-top" alt= ${producto.alt}>
                             <div class="card-body">
-                                <h5 class="card-title">${producto.nombre}</h5>
-                                <p class="card-text">${producto.descripcion}</p>
+                                <h5 class="card-title"> ${producto.nombre} </h5>
+                                <p class="card-text"> ${producto.descripcion} </p>
                                 <p>$${producto.precio}</p>
                                 <button class="productoAgregar" id="${producto.id}">Agregar</button>    
                             </div>
@@ -123,8 +123,6 @@
 
         addToCartButton();
     }
-
-    renderProductos(productos);
 
     function addToCartButton() {
         addButton = document.querySelectorAll(".productoAgregar");
@@ -154,6 +152,9 @@
         });
     }
 
+    renderProductos(productos);
+    addToCartButton();
+
     // API Fetch
     const binIDs = [
         '657bd63ddc74654018837160',
@@ -172,16 +173,19 @@
 
     const apiKey = '$2a$10$8niQdE2xZRnf9Q6acp3Skux8OmYD0BawH8Hm3tGvpm06VZSQW9THm';
 
-   
+    binIDs.forEach(binID => {
         const url = `https://api.jsonbin.io/v3/b/${binID}`;
         const headers = {
             'secret-key': apiKey
         };
-
 
         fetch(url, { headers })
             .then(response => response.json())
             .then(data => {
                 console.log(data.record);
             })
-        })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    });
+})();
